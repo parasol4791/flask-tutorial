@@ -15,6 +15,8 @@ flask init-db
 
 Local Routes:
 http://127.0.0.1:5000/hello
+/auth/register
+/auth/login
 
 
 Exiting flask shell: Ctrl+z, Enter
