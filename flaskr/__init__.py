@@ -1,6 +1,6 @@
 import os
 from flask import Flask
-from . import db, auth
+from . import db, auth, blog
 
 
 def create_app(test_config=None):
@@ -31,5 +31,9 @@ def create_app(test_config=None):
 
     db.init_app(app)
     app.register_blueprint(auth.bp)
+    app.register_blueprint(blog.bp)
+    # Blog is the main feature of this app, so it goes to the root URL '/'
+    # Both plain 'index' and 'blog.index' names are associated with '/' URL, so they work consistently
+    app.add_url_rule('/', endpoint='index')
 
     return app

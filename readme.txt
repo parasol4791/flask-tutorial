@@ -13,8 +13,11 @@ $env:FLASK_APP = "flaskr"
 $env:FLASK_ENV = "development"
 flask init-db
 
-Local Routes:
-http://127.0.0.1:5000/hello
+Endpoints:
+/                   # the blog itself (at the root, also referred to as 'index')
+/create             # create a post
+/<id>/update        # it handles delete as well
+/hello
 /auth/register
 /auth/login
 

@@ -87,8 +87,9 @@ def logout():
 
 
 def login_required(view):
-    """Create a decorator. If a user is logged in, proceed with the original view.
-        Otherwise, redirect to login URL"""
+    """Create a decorator '@login_required'.
+       If a user is logged in, proceed with the original view.
+       Otherwise, redirect to login view"""
     @functools.wraps(view)
     def wrapped_view(**kwargs):
         if g.user is None:
