@@ -21,6 +21,9 @@ Endpoints:
 /auth/register
 /auth/login
 
+To install 'flaskr' project in editable mode (to create flaskr package from setup.py and MANIFEST.in):
+pip install -e .
+
 
 Exiting flask shell: Ctrl+z, Enter
 
