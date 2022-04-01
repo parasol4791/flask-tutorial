@@ -24,6 +24,9 @@ Endpoints:
 To install 'flaskr' project in editable mode (to create flaskr package from setup.py and MANIFEST.in):
 pip install -e .
 
+To run tests:
+pytest
+
 
 Exiting flask shell: Ctrl+z, Enter
 
