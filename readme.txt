@@ -26,6 +26,12 @@ pip install -e .
 
 To run tests:
 pytest
+Tests showing individual functions:
+pytest -v
+Check for test coverage:
+coverage report
+Covered lines (in html):
+coverage html
 
 
 Exiting flask shell: Ctrl+z, Enter
